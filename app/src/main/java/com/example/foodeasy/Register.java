@@ -31,7 +31,7 @@ public class Register extends AppCompatActivity {
     LinearLayout signin;
     TextInputEditText firstname,lastname,email,phone,password;
 
-    private final String url="https://192.168.1.6/register.php";
+    private final String url="https://192.168.1.9/android/register.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,6 +85,7 @@ public class Register extends AppCompatActivity {
                             }
                             else{
                                 Toast.makeText(Register.this, "Inserted", Toast.LENGTH_SHORT).show();
+                                startActivity(new Intent(Register.this,Login.class));
                             }
 
                         }
