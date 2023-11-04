@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#2CACA3A3"
+    tools:context=".Home_Fragment">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+          <androidx.cardview.widget.CardView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginHorizontal="@dimen/_8sdp"
+              android:layout_marginTop="@dimen/_7sdp"
+              android:background="@color/white"
+              app:cardCornerRadius="@dimen/_10sdp">
+
+              <SearchView
+                  android:id="@+id/searchview"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:queryHint="Search here..."
+                  android:iconifiedByDefault="false"
+
+               />
+          </androidx.cardview.widget.CardView>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/product_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+</FrameLayout>
